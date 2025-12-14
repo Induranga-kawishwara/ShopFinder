@@ -1,79 +1,139 @@
-# ShopFinder
+# ShopFinder 🛍️📍
 
-ShopFinder is a dynamic and responsive web application designed to help users discover local shops and businesses with ease. Users can search for stores based on their location, view them on an interactive map, and get essential details like addresses, operating hours, and user reviews.
+**ShopFinder** is a location-based application that helps users **discover shops**, view shop details, and quickly find places based on **search + categories + distance**.
 
-## Features
 
-- **Interactive Map View**: Utilizes a map interface (e.g., Google Maps or Mapbox) to display shop locations.
-- **Geolocation & Search**: Find shops near your current location or search by address or zip code.
-- **Shop Categories**: Filter shops by categories such as "Grocery", "Electronics", "Restaurant", etc.
-- **Detailed Information**: View shop details including address, phone number, website, and opening hours.
-- **User Authentication**: Secure sign-up and login functionality for users.
-- **User Contributions**: Registered users can add new shops, post reviews, and rate existing ones.
-- **Responsive Design**: Fully functional on both desktop and mobile devices.
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Screenshots](#screenshots)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+  - [Clone](#clone)
+  - [Run the App](#run-the-app)
+- [Environment Variables](#environment-variables)
+- [Database (Optional)](#database-optional)
+- [Troubleshooting](#troubleshooting)
+- [Author](#author)
+
+---
+
+## Overview
+
+ShopFinder is designed to make it easy to:
+- Find shops near a user’s current location
+- Search shops by **name / category**
+- View shop details such as **address, contact info, open/close status**
+- Navigate to a selected shop using maps/directions
+
+---
+
+## Key Features
+
+- 📍 **Nearby shop discovery** (GPS/location-based)
+- 🔎 **Fast search** by shop name/category
+- 🧩 **Filters** (category, distance, rating, open now) *(if applicable)*
+- 🗺️ **Map view + directions** *(if applicable)*
+- ⭐ **Favorites / saved shops** *(optional)*
+- 🧑‍💼 **Admin CRUD** for managing shops *(optional)*
+- 🔐 Authentication *(optional)*
+
+---
+---
 
 ## Tech Stack
 
-- **Frontend**: React, CSS3, HTML5, JavaScript (ES6+)
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB with Mongoose
-- **Mapping**: Mapbox GL JS / Google Maps API
-- **Authentication**: JSON Web Tokens (JWT)
-- **Deployment**: Vercel
+> Update this section to match your actual project (keep what applies).
 
-## Installation
+### Option A: Web App (React / Node)
+- Frontend: React / Vite / Next.js
+- Backend: Node.js (Express) / Java / .NET *(if any)*
+- Database: MySQL / MongoDB / PostgreSQL *(if any)*
+- Maps: Google Maps / Mapbox *(if used)*
 
-To get a local copy up and running, follow these simple steps.
+### Option B: Mobile App (Android / Flutter / React Native)
+- Android: Java/Kotlin + Google Maps SDK *(if used)*
+- Flutter: Dart + Maps plugin *(if used)*
+- React Native: Expo / RN + maps *(if used)*
 
-### Prerequisites
+### Common
+- REST API / JSON
+- Location services (GPS)
+- Search + filters
 
-- Node.js and npm
-- MongoDB
-- Git
+---
 
-### Setup
+## Architecture
 
-1.  **Clone the repository:**
+> Keep what matches your repo.
 
-    ```sh
-    git clone https://github.com/your_username/ShopFinder.git
-    cd ShopFinder
-    ```
+**Typical setup:**
+- **Client (Web/Mobile):** UI + location + search
+- **Backend (Optional):** shop management, authentication, APIs
+- **Database (Optional):** store shop records, categories, users, favorites
 
-2.  **Install backend dependencies:**
+---
 
-    ```sh
-    npm install
-    ```
+## Getting Started
 
-3.  **Install frontend dependencies:**
+### Clone
+```bash
+git clone https://github.com/Induranga-kawishwara/ShopFinder.git
+cd ShopFinder
+```
 
-    ```sh
-    cd client
-    npm install
-    ```
+### Run the App
 
-4.  **Set up environment variables:**
-    Create a `.env` file in the root directory and add the following:
+#### If this is a Node/React project (`package.json` exists)
+```bash
+npm install
+npm run dev
+# or
+npm start
+```
 
-    ```env
-    MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
-    MAPBOX_API_TOKEN=your_mapbox_api_token
-    ```
+## Environment Variables
 
-5.  **Run the application:**
-    From the root directory, run the development server:
-    ```sh
-    npm run dev
-    ```
-    This will start both the backend and frontend servers concurrently.
+Create a `.env` file (or update your config file) with values like:
 
-## Usage
+```env
+# API
+API_BASE_URL=http://localhost:5000
 
-- Open your browser and navigate to `http://localhost:3000`.
-- Sign up for a new account or log in if you already have one.
-- Use the search bar to find shops by name or location.
-- Click on a map marker to see a quick summary of a shop.
-- Click on a shop from the list to view its detailed information page.
-- Add a new shop or review an existing one.
+# Maps
+GOOGLE_MAPS_API_KEY=YOUR_KEY_HERE
+
+# Database (if applicable)
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=shopfinder
+DB_USER=root
+DB_PASSWORD=your_password
+```
+
+---
+
+## Troubleshooting
+
+**Location not working**
+- Enable device location services
+- Allow location permission for the app
+- Test on a real device if emulator location is not set
+
+**Maps not loading**
+- Confirm Maps API key is valid and enabled
+- Check billing/API restrictions (Google Maps)
+
+**Backend connection errors**
+- Confirm backend is running and `API_BASE_URL` is correct
+- Check CORS settings (for web)
+
+---
+
+## Author
+
+**Induranga Kawishwara**  
+GitHub: `Induranga-kawishwara`
