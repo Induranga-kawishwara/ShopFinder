@@ -33,13 +33,13 @@ ShopFinder is designed to make it easy to:
 
 ## Key Features
 
-- 📍 **Nearby shop discovery** (GPS/location-based)
-- 🔎 **Fast search** by shop name/category
-- 🧩 **Filters** (category, distance, rating, open now) *(if applicable)*
-- 🗺️ **Map view + directions** *(if applicable)*
-- ⭐ **Favorites / saved shops** *(optional)*
-- 🧑‍💼 **Admin CRUD** for managing shops *(optional)*
-- 🔐 Authentication *(optional)*
+- **Nearby shop discovery** (GPS/location-based)
+- **Fast search** by shop name/category
+- **Filters** (category, distance, rating, open now) 
+- **Map view + directions** 
+- **Favorites / saved shops** 
+- **Admin CRUD** for managing shops 
+- Authentication 
 
 ---
 ---
