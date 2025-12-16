@@ -8,7 +8,6 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Key Features](#key-features)
-- [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
 - [Getting Started](#getting-started)
