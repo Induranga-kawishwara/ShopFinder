@@ -89,12 +89,8 @@ API_BASE_URL=http://localhost:5000
 # Maps
 GOOGLE_MAPS_API_KEY=YOUR_KEY_HERE
 
-# Database (if applicable)
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=shopfinder
-DB_USER=root
-DB_PASSWORD=your_password
+# Database
+DATABASE = YOUR_MONGO_KEY_HERE
 ```
 
 ---
