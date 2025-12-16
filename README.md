@@ -42,38 +42,21 @@ ShopFinder is designed to make it easy to:
 - Authentication 
 
 ---
----
 
 ## Tech Stack
-
-> Update this section to match your actual project (keep what applies).
-
-### Option A: Web App (React / Node)
-- Frontend: React / Vite / Next.js
-- Backend: Node.js (Express) / Java / .NET *(if any)*
-- Database: MySQL / MongoDB / PostgreSQL *(if any)*
-- Maps: Google Maps / Mapbox *(if used)*
-
-### Option B: Mobile App (Android / Flutter / React Native)
-- Android: Java/Kotlin + Google Maps SDK *(if used)*
-- Flutter: Dart + Maps plugin *(if used)*
-- React Native: Expo / RN + maps *(if used)*
-
-### Common
-- REST API / JSON
-- Location services (GPS)
-- Search + filters
+- Frontend: React
+- Backend: Node.js (Express)
+- Database: MongoDB 
+- Maps: Google Maps
 
 ---
 
 ## Architecture
 
-> Keep what matches your repo.
-
 **Typical setup:**
 - **Client (Web/Mobile):** UI + location + search
-- **Backend (Optional):** shop management, authentication, APIs
-- **Database (Optional):** store shop records, categories, users, favorites
+- **Backend :** shop management, authentication, APIs
+- **Database :** store shop records, categories, users, favorites
 
 ---
 
