@@ -15,7 +15,7 @@
   - [Clone](#clone)
   - [Run the App](#run-the-app)
 - [Environment Variables](#environment-variables)
-- [Database (Optional)](#database-optional)
+- [Database (Optional)](#database)
 - [Troubleshooting](#troubleshooting)
 - [Author](#author)
 
